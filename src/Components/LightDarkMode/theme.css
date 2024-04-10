@@ -1,0 +1,44 @@
+:root{
+   --background: #ffffff;
+   --text-primary: #000;
+  --button-bg: #000;
+  --button-text: #ffffff;
+}
+[data-theme="dark"]{
+    --background: #000000;
+    --text-primary: #ffffff;
+   --button-bg: #ffffff;
+   --button-text: #000000;
+}
+.light-dark-mode{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+  font-size: 20px;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.light-dark-mode .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .light-dark-mode .container p {
+    color: var(--text-primary);
+    font-size: 40px;
+    margin: 0px;
+  }
+  
+  .light-dark-mode .container button {
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-bg);
+    color: var(--button-text);
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+  }
